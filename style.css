@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+:root{
+	--bg-primary:#c91264;
+	--color-primary:#dc6575;
+}
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+}
+a, a:hover, a:focus{
+	text-decoration: none;
+    
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 700;
+}
+h2{
+	font-size: 44px;
+	margin-bottom: 15px;
+}
+h3{
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 600;
+}
+section, .container{
+	position: relative;
+}
+.lead{
+font-weight: 500;
+}
+
+
+/*Header*/
+
+header {
+    background: var(--bg-primary);
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+header .navbar-expand-lg .navbar-nav .nav-link {
+    color: rgb(241, 218, 218);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 34px;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(230, 214, 214);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(85, 55, 204);
+}
+
+
+
+/*Hero Banner*/
+
+.hero-banner{
+	background: url("../large-modern-office-building.jpg") no-repeat;
+	background-size: cover;
+	padding: 200px 0px;
+	min-height: 500px;
+	position: relative;
+}
+.hero-banner:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+.banner-text-wrap h1{
+	font-size:60px;
+	font-weight: 700;
+}
+
+.btn {
+    padding: 8px 24px;
+    border-radius: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-white {
+    background: rgb(228, 224, 224);
+    color: var(--color-primary);
+}
+.banner-text-wrap {
+    max-width: 600px;
+}
+
+.banner-text-wrap  p {
+    margin-bottom: 23px;
+    margin-top: 15px;
+}
+
+
+/*Features Section*/
+section.features-section {
+    margin-top: -90px;
+}
+.bg1 {
+    background: #d82f4c;
+}
+
+.bg2 {
+    background: #d82f4c;
+}
+
+.bg3 {
+    background: #d82f4c;
+}
+
+.features-box h3, .features-box p {
+    color: rgb(14, 12, 10);
+}
+
+.features-box {
+    padding: 20px;
+    margin: 25px;
+}
+
+
+
+/*About Section*/
+
+section.about-section {
+    padding: 100px 0px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+}
+.about-media {
+    border: 10px solid var(--color-primary);
+}
+
+
+
+/*Services Section*/
+
+.section-title {
+    margin-bottom: 60px;
+    border-radius: 1.2rem;
+}
+
+section.services-section {
+    padding: 90px 0px 50px;
+    background: #ebe1e1;
+    display: inline;
+    box-shadow: #c91264;
+   
+}
+
+.services-box {
+    background: rgb(235, 240, 245);
+    padding: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+    
+    
+}
+
+.services-box h3 {
+    margin: 15px 0px 20px;
+}
+
+
+
+/*reviews Section*/
+
+.reviews-section{
+	background:url("../images/reviews-bg.jpg") no-repeat;
+	background-size: cover;
+}
+.review-media {
+    width: 100%;
+}
+
+.review-media img {
+    width: 100px !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+}
+.bg-overlay:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(20, 20, 22, 0.6);
+}
+
+.reviews-section {
+    padding: 100px 0px;
+}
+
+.reviews-section h2 {
+    color: #FFF;
+    text-align: center;
+}
+
+.review-box {
+    color: #FFF;
+    text-align: center;
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+.review-box p {
+    font-size: 18px;
+    margin: 26px 0px 26px;
+}
+
+.review-box  h4 {
+    text-transform: uppercase;
+}
+
+.review-box h5 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+/*team Section*/
+
+section.team-section {
+    padding: 100px 0px;
+}
+
+.team-info {
+    text-align: center;
+}
+
+.team-info h3 {
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+
+ul.team-social li {
+    display: inline-block;
+}
+
+ul.team-social li a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--color-primary);
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    color: var(--color-primary);
+}
+
+ 
+
+
+
+/*Booking Section*/
+
+
+.booking-section{
+		background:url("../images/booking-bg.jpg") no-repeat;
+	background-size: cover;
+	padding: 100px 0px;
+}
+.form-control {
+    border-radius: 0;
+    height: 60px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 224px !important;
+}
+
+.form-col h4 {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form-col h3 {
+    font-size: 36px;
+    color: rgb(241, 230, 230);
+    margin: 7px 0px 50px;
+}
+
+
+/*Blog Section*/
+
+section.blog-section {
+    padding: 100px 0px;
+}
+
+.blog-info h3 a {
+    color: rgb(235, 225, 225);
+}
+
+ul.meta li {
+    display: inline-block;
+}
+
+.blog-info p {
+    margin-top: 20px;
+}
+
+.blog-media {
+    margin-bottom: 17px;
+}
+
+.blog-box {
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.11);
+}
+
+
+/*Footer */
+
+footer {
+    background: var(--bg-primary);
+    padding: 100px 0px;
+    color: rgb(238, 235, 235);
+}
+
+ul.footer-address li i {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 22px;
+}
+
+ul.footer-address li {
+    position: relative;
+    padding-left: 35px;
+}
+
+ul.footer-address li a {
+    color: #FFF;
+}
+
+.footer-widget h3 {
+    margin-bottom: 30px;
+}
+
+ul.footer-menu li a {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+
+
+
+/*Responsive css*/
+
+
+
+
+
+@media (min-width:992px) and (max-width:1400px){
+    
+    header .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 11px;
+    font-size: 14px;
+}
+
+}
+
+
+
+
+@media (max-width:991px){
+.navbar-toggler-icon {
+    background: #FFF;
+    padding: 20px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}	
+.reviews-section { 
+    padding: 40px 0px;
+}
+
+.section-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.review-box p {
+    font-size: 15px;
+}
+
+.banner-text-wrap h1 {
+    font-size: 39px;
+}
+.team-box {
+    margin-bottom: 40px;
+}
+.hero-banner {
+    padding: 137px 0px;
+    min-height: auto;
+}
+
+.booking-section {
+    padding: 40px 0px;
+}
+
+footer {
+    padding: 40px 10px;
+}
+
+section.blog-section {
+    padding: 40px 0px;
+}
+
+section.team-section  {
+    padding: 30px 0px;
+}
+
+ 
+
+section.services-section {
+    padding: 30px 0px;
+}
+
+.services-box {
+    margin-bottom: 20px;
+}
+
+.about-media {
+    margin-bottom: 30px;
+}
+
+.features-box {
+    margin-bottom: 30px;
+}
+
+section.about-section {
+    padding: 30px 0px 40px;
+}	
+	
+	
+	
+}
+
+
+
